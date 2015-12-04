@@ -1,0 +1,80 @@
+<%= form_for(@track) do |f| %>
+  <% if @track.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@track.errors.count, "error") %> prohibited this track from being saved:</h2>
+
+      <ul>
+      <% @track.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="container">
+    <h1>Editing Track</h1>
+    <div class"row">
+      <div class="col-xs-3">
+        <div id="sidebar">
+      <ul class="list-group">
+        <li class="list-group-item">
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to 'Add An Album', new_album_path %>
+          </li>
+          <li class="list-group-item">
+            <!-- <span class="badge">8</span> -->
+            <%= link_to 'Incoming Albums', albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Programmed Albums', programmed_albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Help', help_path %>
+          </li>
+      </ul>
+    </div>
+      </div>
+      <div class="col-xs-9">
+        <div class="field form-group">
+          <%= f.label :number, 'Track Number' %><br>
+          <%= f.text_field :number %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :side, 'CD Side' %><br>
+          <%= f.text_field :side %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :name, 'Name' %><br>
+          <%= f.text_field :name %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :artist, 'Artist' %><br>
+          <%= f.text_field :artist %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :format, 'Format' %><br>
+          <%= f.text_field :format %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :explicit, 'Explicit' %><br>
+          <%= f.check_box :explicit %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :automation, 'Automation' %><br>
+          <%= f.check_box :automation %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :frequency, 'Frequency' %><br>
+          <%= f.text_field :frequency %>
+        </div>
+      <div class="actions">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+      </br>
+      
+      </div>
+    </div>
+  </div>
+<%end%>

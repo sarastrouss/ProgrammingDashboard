@@ -1,0 +1,91 @@
+
+<div id="notice" class="<%= 'alert alert-success' if notice != nil %>" role="alert"><%= notice %></div>
+
+
+<div class="container">
+  <h1><%= @album.albumTitle %></h1>
+<div class="row">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <div id="sidebar">
+      <ul class="list-group">
+        <li class="list-group-item">
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to 'Add An Album', new_album_path %>
+          </li>
+          <li class="list-group-item">
+            <!-- <span class="badge">8</span> -->
+            <%= link_to 'Incoming Albums', albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Programmed Albums', programmed_albums_path %>
+          </li>
+          <li class="list-group-item">
+                Help
+          </li>
+        </ul>
+    </div>
+  </div>
+
+      <!-- table -->
+  <div id="tracks" class="col-xs-9 col-sm-9 col-md-9 col-lg-4">
+      <input type="text" style="width:200px;" class="search form-control" placeholder="Search for..."/>
+      <table class="table table-bordered table-hover table-responsive">
+        <thead>
+        </br>
+          <tr>
+<!--             <th>Album Title</th> -->
+<!--             <th>Artist</th> -->
+            <th>Track Number</th>
+            <th>CD Side</th>
+            <th>Track Title</th>
+            <th>Format</th>
+            <th>Explicit</th>
+            <th>Automation</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <div class="row">
+          <tbody class="list" style="table-layout: fixed">
+            <% @tracks.each do |track| %>
+            <tr>
+              <td><%= track.number %></td>
+              <td><%= track.side %></td>
+              <td><%= track.name %></td>
+              <td><%= track.format %></td>
+              </td>
+              <td><%= 
+                if track.explicit 
+                  "Yes" 
+                else 
+                  "No" 
+                end
+                %></td>
+              </td>
+              <td><%= 
+                if track.automation 
+                  "Yes" 
+                else 
+                  "No" 
+                end
+                %></td>
+              </td>
+              <td><%= link_to 'Edit', edit_track_path(track) %></td>
+              <td><%= link_to 'Delete', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </div>
+      </table>
+      <script type="text/javascript">
+        var options = {
+          valueNames: [ 'tracktitle' , 'format']
+        };
+
+        var userList = new List('tracks', options);
+      </script>
+  </div> 
+</div>
+</div>

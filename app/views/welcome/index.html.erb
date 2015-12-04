@@ -1,0 +1,49 @@
+<head>
+
+	<title>WREK Dashboard</title>
+</head>
+
+<body>
+	
+	<div class="container">
+		<h1>Programming Dashboard</h1>
+		<div class"row">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<div id="sidebar">
+					<ul class="list-group">
+					<li class="list-group-item">
+						<%= link_to 'Home', root_path %>
+					</li>
+					<li class="list-group-item">
+						<%= link_to 'Add An Album', new_album_path %>
+					</li>
+					<li class="list-group-item">
+						<!-- <span class="badge">8</span> -->
+						<%= link_to 'Incoming Albums', albums_path %>
+					</li>
+		           <li class="list-group-item">
+		            <%= link_to 'Programmed Albums', programmed_albums_path %>
+		          </li>
+		          <li class="list-group-item">
+		          	<%= link_to 'Help', help_path %>
+		          </li>
+					
+				</ul>
+			</div>
+
+		</div>
+	</div> 
+
+
+	<div class="col-xs-9 col-sm-9 col-md-9 col-lg-4">
+		<h4> Online Hourly Listeners</h4>
+		<div id="heatmap"></div>
+		<br>
+		<br>
+		<h4> Percentage of Automation</h4>
+		<div id="auto_heatmap">
+		</div>
+	</div>
+
+</div>
+</body>

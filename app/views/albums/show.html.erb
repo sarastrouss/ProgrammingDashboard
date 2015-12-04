@@ -1,0 +1,40 @@
+
+
+<p>
+  <strong>Mediatype:</strong>
+  <%= @album.mediaType %>
+</p>
+
+<p>
+  <strong>Recordlabel:</strong>
+  <%= @album.recordLabel %>
+</p>
+
+<p>
+  <strong>Albumtitle:</strong>
+  <%= @album.albumTitle %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @album.artist %>
+</p>
+
+<p>
+  <strong>Recordingyear:</strong>
+  <%= @album.recordingYear %>
+</p>
+
+<p>
+  <strong>Spotify:</strong>
+  <%= @album.spotify %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @album.notes %>
+</p>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %> |
+<%= link_to 'Add Another', new_album_path %>

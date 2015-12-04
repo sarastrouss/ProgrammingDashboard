@@ -1,0 +1,63 @@
+
+<div id="notice" class="<%= 'alert alert-success' if notice != nil %>" role="alert"><%= notice %></div>
+
+<!-- <div class="row"> 
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    
+</div>
+</div> -->
+
+<div class="container">
+  <h1 id="title1">Help</h1>
+<div class="row">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <div id="sidebar">
+      <ul class="list-group">
+        <li class="list-group-item">
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to 'Add An Album', new_album_path %>
+          </li>
+          <li class="list-group-item">
+            <!-- <span class="badge">8</span> -->
+            <%= link_to 'Incoming Albums', albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Programmed Albums', programmed_albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Help', help_path %>
+          </li>
+        </ul>
+    </div>
+  </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+      <h2> Frequently Asked Questions</h2>
+      <h3> 1. How do I add an album? </h3>
+      <h4>Simply select the "Add an Album" option from the side menu. Once selected, you can fill out all of the information that is found on the potential album.</h4>
+      </br>
+      <h3> 2. How do I edit an album? </h3>
+      <h4>Once in the "Incoming albums" or "Programmed albums" section, select the "Edit Album" option from the album row that you wish to edit. Once you finish editing your album, click submit and you're ready to go!</h4>
+      </br>
+      <h3> 3. How do I reject an album? </h3>
+      <h4>Once in the "Incoming albums" or "Programmed albums" section, select the "Reject" option from the album row that you wish to reject.</h4>
+      </br>
+      <h3> 4. How do I program an album? </h3>
+      <h4>Once in the "Incoming albums" section, select the "Program" option from the album row that you wish to program.</h4>
+      </br>
+      <h3> 5. How do I add tracks to an album? </h3>
+      <h4>Once an album has been programmed, you can add tracks by navigating to the "Programmed Albums" menu option and then the "Add Tracks" option for the album you wish to add tracks to.</h4>
+      </br>
+      <h3> 6. How do I edit a track </h3>
+      <h4>Once in the "Programmed albums" section, select the "Edit Track" option from the track row that you wish to edit. Once you finish editing your track, click submit and you're ready to go!</h4>
+      </br>
+      <h3> 7. What is the frequency of an album/track? </h3>
+      <h4>Frequency refers to the amount of airplay that particular album/track will receive. 0 refers to low, 1 refer to medium, and 2 refers to high. </h4>
+      </br>
+      <h3> 8. Have more questions? </h3>
+      <h4>Email <u><a href="mailto:it.director@wrek.org">it.director@wrek.org</a></u></h4>
+      </br>
+    </div>
+</div>
+</div>

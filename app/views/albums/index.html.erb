@@ -1,0 +1,84 @@
+
+<div id="notice" class="<%= 'alert alert-success' if notice != nil %>" role="alert"><%= notice %></div>
+
+<!-- <div class="row"> 
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    
+</div>
+</div> -->
+
+<div class="container">
+  <h1 id="title1">Incoming Albums</h1>
+<div class="row">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <div id="sidebar">
+      <ul class="list-group">
+        <li class="list-group-item">
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to 'Add An Album', new_album_path %>
+          </li>
+          <li class="list-group-item">
+            <!-- <span class="badge">8</span> -->
+            <%= link_to 'Incoming Albums', albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Programmed Albums', programmed_albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Help', help_path %>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+      <!-- table -->
+  <div id="albums" class="col-xs-9 col-sm-9 col-md-9 col-lg-4">
+      <input type="text" style="width:200px;" class="search form-control" placeholder="Search for..."/>
+      <table class="table table-bordered table-hover table-responsive">
+        <thead>
+        </br>
+          <tr>
+            <th>Media Type</th>
+            <th>Record Label</th>
+            <th>Album Title</th>
+            <th>Artist</th>
+            <th>Recording Year</th>
+            <th>Spotify</th>
+            <th>Notes</th>
+            <th>Program</th>
+            <th>Edit</th>
+            <th>Reject</th>
+          </tr>
+        </thead>
+        <div class="row">
+          <tbody class="list">
+            <% @albums.each do |album| %>
+            <tr>
+              <td><%= album.mediaType %></td>
+              <td class="recordlabel"><%= album.recordLabel %></td>
+              <td class="albumtitle"><%= album.albumTitle %></td>
+              <td class="artist"><%= album.artist %></td>
+              <td><%= album.recordingYear %></td>
+              <td><a href=<%= album.spotify %>>Listen Here!</a></td>
+              <td><%= album.notes %></td>
+              <td><%= button_to "Program", album_program_path(album), :method => :patch %>
+              </td>
+              <td><%= link_to 'Edit', edit_album_path(album) %></td>
+              <td><%= link_to 'Reject', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </div>
+      </table>
+      <script type="text/javascript">
+        var options = {
+          valueNames: [ 'artist' , 'albumtitle' , 'recordlabel']
+        };
+
+        var userList = new List('albums', options);
+      </script>
+  </div> 
+</div>
+</div>

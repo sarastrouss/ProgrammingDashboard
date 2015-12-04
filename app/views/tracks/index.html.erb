@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="container">
+  
+<div class="row">
+  <h1 style="padding-left: 6.5%">New Track</h1>
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <div id="sidebar">
+      <ul class="list-group">
+        <li class="list-group-item">
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to 'Add An Album', new_album_path %>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">8</span>
+            <%= link_to 'Incoming Albums', albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Programmed Albums', programmed_albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Help', help_path %>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+      <!-- table -->
+  <div class="col-xs-9 col-sm-9 col-md-9 col-lg-4">
+      <table class="table table-bordered table-hover table-responsive">
+        <thead>
+          <tr>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>Format</th>
+                <th>Explicit</th>
+                <th>Automation</th>
+                <th>Frequency</th>
+                <th>Album</th>
+                <th colspan="3"></th>
+              </tr>
+            </thead>
+        </thead>
+        <div class="row">
+          <tbody>
+            <% @tracks.each do |track| %>
+              <tr>
+                <td><%= track.name %></td>
+                <td><%= track.artist %></td>
+                <td><%= track.format %></td>
+                <td><%= track.explicit %></td>
+                <td><%= track.automation %></td>
+                <td><%= track.frequency %></td>
+                <td><%= track.album %></td>
+                <td><%= link_to 'Show', track %></td>
+                <td><%= link_to 'Edit', edit_track_path(track) %></td>
+                <td><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </div>
+      </table>
+  </div> 
+</div>
+</div>
+<br>
+
+<%= link_to 'New Track', new_track_path %>

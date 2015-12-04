@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mediaType: MyString
+  recordLabel: MyString
+  albumTitle: MyString
+  artist: MyString
+  recordingYear: 1
+  spotify: MyString
+  notes: MyString
+
+two:
+  mediaType: MyString
+  recordLabel: MyString
+  albumTitle: MyString
+  artist: MyString
+  recordingYear: 1
+  spotify: MyString
+  notes: MyString

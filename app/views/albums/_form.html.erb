@@ -1,0 +1,75 @@
+
+<%= form_for(@album) do |f| %>
+  <% if @album.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@album.errors.count, "error") %> prohibited this album from being saved:</h2>
+
+      <ul>
+      <% @album.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="container">
+    
+    <div class"row">
+      <div class="col-xs-3">
+        <div id="sidebar">
+      <ul class="list-group">
+       <li class="list-group-item">
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to 'Add An Album', new_album_path %>
+          </li>
+          <li class="list-group-item">
+            <!-- <span class="badge">8</span> -->
+            <%= link_to 'Incoming Albums', albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Programmed Albums', programmed_albums_path %>
+          </li>
+          <li class="list-group-item">
+                <%= link_to 'Help', help_path %>
+          </li>
+      </ul>
+    </div>
+      </div>
+      <div class="col-xs-9">
+        <div class="field form-group">
+          <%= f.label :mediaType, 'Media Type' %><br>
+          <%= f.text_field :mediaType %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :recordLabel, 'Record Label' %><br>
+          <%= f.text_field :recordLabel %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :albumTitle, 'Album Title' %><br>
+          <%= f.text_field :albumTitle %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :artist, 'Artist' %><br>
+          <%= f.text_field :artist %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :recordingYear, 'Recording Year' %><br>
+          <%= f.number_field :recordingYear %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :spotify, 'Spotify' %><br>
+          <%= f.url_field :spotify %>
+        </div>
+        <div class="field form-group">
+          <%= f.label :notes, 'Notes' %><br>
+          <%= f.text_field :notes %>
+        </div>
+      <div class="actions">
+        <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

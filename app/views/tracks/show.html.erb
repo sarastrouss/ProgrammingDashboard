@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @track.name %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @track.artist %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @track.format %>
+</p>
+
+<p>
+  <strong>Explicit:</strong>
+  <%= @track.explicit %>
+</p>
+
+<p>
+  <strong>Automation:</strong>
+  <%= @track.automation %>
+</p>
+
+<p>
+  <strong>Frequency:</strong>
+  <%= @track.frequency %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @track.album.albumTitle %>
+</p>
+
+<%= link_to 'Edit', edit_track_path(@track) %> |
+<%= link_to 'Add Another', album_new_track_path(@track.album.id) %>

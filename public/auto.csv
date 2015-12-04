@@ -1,0 +1,169 @@
+day,hour,percent_auto,showName
+0,0,100,Atmospherics
+0,1,100,Atmospherics
+0,2,100,Atmospherics
+0,3,100,Overnight Alternatives
+0,4,100,Overnight Alternatives
+0,5,100,Overnight Alternatives
+0,6,0,Classics
+0,7,100,Classics
+0,8,20,Classics
+0,9,20,Jazz
+0,10,0,Jazz
+0,11,100,Jazz
+0,12,100,North Avenue Lounge
+0,13,50,"Rock, Rhythm, and Roll"
+0,14,100,"Rock, Rhythm, and Roll"
+0,15,10,"Rock, Rhythm, and Roll"
+0,16,50,"Rock, Rhythm, and Roll"
+0,17,5,"Rock, Rhythm, and Roll"
+0,18,0,Tapas and Tunes
+0,19,0,High End Theory
+0,20,0,Shillelagh Law
+0,21,0,Sub-Saharan Vibes
+0,22,0,Slow Riot
+0,23,0,Slow Riot
+1,0,0,Atmospherics
+1,1,0,Atmospherics
+1,2,100,Atmospherics
+1,3,100,Overnight Alternatives
+1,4,100,Overnight Alternatives
+1,5,100,Overnight Alternatives
+1,6,100,Classics
+1,7,100,Classics
+1,8,0,Classics
+1,9,100,Jazz
+1,10,36,Jazz
+1,11,40,Jazz
+1,12,0,Freaker's Ball
+1,13,0,"Rock, Rhythm, and Roll"
+1,14,100,"Rock, Rhythm, and Roll"
+1,15,100,"Rock, Rhythm, and Roll"
+1,16,100,"Rock, Rhythm, and Roll"
+1,17,0,"Rock, Rhythm, and Roll"
+1,18,0,Gold Soundz
+1,19,0,Underground Recordings
+1,20,0,New Forces
+1,21,0,The Longboards Show
+1,22,0,Live at WREK
+1,23,0,Radiobomb
+2,0,100,Atmospherics
+2,1,100,Atmospherics
+2,2,100,Atmospherics
+2,3,100,Overnight Alternatives
+2,4,100,Overnight Alternatives
+2,5,100,Overnight Alternatives
+2,6,100,Classics
+2,7,100,Classics
+2,8,100,Classics
+2,9,0,Jazz
+2,10,0,Jazz
+2,11,0,Jazz
+2,12,0,Inside the Black Box
+2,13,0,"Rock, Rhythm, and Roll"
+2,14,0,"Rock, Rhythm, and Roll"
+2,15,0,"Rock, Rhythm, and Roll"
+2,16,0,"Rock, Rhythm, and Roll"
+2,17,50,"Rock, Rhythm, and Roll"
+2,18,100,Ramblin' WREK Report
+2,19,100,The Mobius
+2,20,100,The Mobius
+2,21,0,Destroy All Music
+2,22,0,Friction
+2,23,0,Psych-Out!
+3,0,100,Atmospherics
+3,1,100,Atmospherics
+3,2,100,Atmospherics
+3,3,100,Overnight Alternatives
+3,4,100,Overnight Alternatives
+3,5,100,Overnight Alternatives
+3,6,100,Classics
+3,7,100,Classics
+3,8,100,Classics
+3,9,100,Jazz
+3,10,100,Jazz
+3,11,100,Jazz
+3,12,100,A Bit Off Broadway
+3,13,100,"Rock, Rhythm, and Roll"
+3,14,100,"Rock, Rhythm, and Roll"
+3,15,100,"Rock, Rhythm, and Roll"
+3,16,100,"Rock, Rhythm, and Roll"
+3,17,100,"Rock, Rhythm, and Roll"
+3,18,100,Pop Up Show
+3,19,100,Sci-Fi Lab
+3,20,0,54-46
+3,21,0,Techniques
+3,22,0,Techniques
+3,23,0,The Electric Boogaloo
+4,0,100,Atmospherics
+4,1,100,Atmospherics
+4,2,100,Atmospherics
+4,3,100,Overnight Alternatives
+4,4,100,Overnight Alternatives
+4,5,100,Overnight Alternatives
+4,6,100,Classics
+4,7,100,Classics
+4,8,100,Classics
+4,9,100,Jazz
+4,10,100,Jazz
+4,11,100,Jazz
+4,12,0,Lost in the Stacks
+4,13,0,"Rock, Rhythm, and Roll"
+4,14,0,"Rock, Rhythm, and Roll"
+4,15,100,"Rock, Rhythm, and Roll"
+4,16,100,"Rock, Rhythm, and Roll"
+4,17,100,Country Classics
+4,18,20,Friday Night Fish Fry
+4,19,0,Friday Night Fish Fry
+4,20,50,Stonehenge
+4,21,100,Stonehenge
+4,22,0,Stonehenge
+4,23,0,Stonehenge
+5,0,0,WREKage
+5,1,0,WREKage
+5,2,0,WREKage
+5,3,0,WREKage
+5,4,0,WREKage
+5,5,0,WREKage
+5,6,0,Weekend Cornucopia
+5,7,0,Weekend Cornucopia
+5,8,0,Weekend Cornucopia
+5,9,0,Weekend Cornucopia
+5,10,0,Weekend Cornucopia
+5,11,0,Weekend Cornucopia
+5,12,0,Weekend Cornucopia
+5,13,0,Weekend Cornucopia
+5,14,0,Weekend Cornucopia
+5,15,0,Weekend Cornucopia
+5,16,0,Weekend Cornucopia
+5,17,0,Weekend Cornucopia
+5,18,0,The Desoto Hour
+5,19,0,The Desoto Hour
+5,20,0,Coffee & Sushi
+5,21,0,EDM Soundsystem
+5,22,0,EDM Soundsystem
+5,23,0,EDM Soundsystem
+6,0,0,Hour of Slack
+6,1,0,Bob's Slacktime Funhouse
+6,2,100,Weekend Cornucopia
+6,3,100,Weekend Cornucopia
+6,4,100,Weekend Cornucopia
+6,5,100,Weekend Cornucopia
+6,6,100,Weekend Cornucopia
+6,7,0,Public Affairs
+6,8,0,Public Affairs
+6,9,0,Public Affairs
+6,10,0,Public Affairs
+6,11,0,Public Affairs
+6,12,100,Weekend Cornucopia
+6,13,100,Weekend Cornucopia
+6,14,100,Weekend Cornucopia
+6,15,100,Weekend Cornucopia
+6,16,100,Weekend Cornucopia
+6,17,100,Weekend Cornucopia
+6,18,0,Mode 7
+6,19,100,Sunday Special
+6,20,100,Sunday Special
+6,21,0,Back Alley Pork Roost
+6,22,0,Personality Crisis
+6,23,0,Personality Crisis
